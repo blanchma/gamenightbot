@@ -1,0 +1,16 @@
+{
+  "name": "telegram-bot-app",
+  "version": "1.0.0",
+  "description": "A Telegram bot built with Node.js and Express",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^4.17.1",
+    "node-telegram-bot-api": "^0.54.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
