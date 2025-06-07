@@ -21,9 +21,6 @@ class MarshalTelebot {
     this.bot.start((ctx) => this.onStart(ctx));
     this.bot.on('text', (ctx) => this.onMessage(ctx));
     this.bot.on(message('sticker'), (ctx) => ctx.reply('👍'))
-
-
-
   }
 
   private onStart(ctx: Context) {
@@ -32,6 +29,8 @@ class MarshalTelebot {
 
   private onMessage(ctx: Context) {
     console.log(JSON.stringify(ctx));
+    ctx.reply(
+      'I received your message. I am still learning, so please be patient with me.')
   }
 
   public startBot() {

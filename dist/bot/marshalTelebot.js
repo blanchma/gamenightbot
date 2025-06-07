@@ -21,6 +21,7 @@ class MarshalTelebot {
     }
     onMessage(ctx) {
         console.log(JSON.stringify(ctx));
+        ctx.reply('I received your message. I am still learning, so please be patient with me.');
     }
     startBot() {
         this.bot.launch();
